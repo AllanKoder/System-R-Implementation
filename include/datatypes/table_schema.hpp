@@ -4,8 +4,9 @@
 
 #include "column_types.hpp"
 
-struct ColumnDefinition
-{
+struct ColumnDefinition {
+    explicit ColumnDefinition(std::string name, ColumnType type, bool nullable);
+
     std::string name;
     ColumnType type;
     bool nullable;
@@ -14,10 +15,12 @@ struct ColumnDefinition
 class TableSchema
 {
 public:
+    explicit TableSchema(std::vector<ColumnDefinition> fields);
+
     int GetColumnCount() const;
-    std::vector<ColumnDefinition>& GetAllColumns() const;
-    ColumnDefinition GetColumn(std::string name) const;
+    const std::vector<ColumnDefinition>& GetAllColumns() const;
+    const ColumnDefinition& GetColumn(std::string name) const;
 
 private:
-    std::vector<ColumnDefinition> fields;
+    std::vector<ColumnDefinition> fields_; // max 255 (byte)
 };

@@ -16,8 +16,8 @@ class RowCodec
 public:
     explicit RowCodec(TableSchema schema);
 
-    std::string Encode(const RowValues& row_values) const;
-    RowValues Decode(const std::string& bytes) const;
+    std::vector<std::byte> Encode(const RowValues& row_values) const;
+    RowValues Decode(const std::vector<std::byte>& bytes) const;
 
 private:
     TableSchema schema_;
