@@ -5,7 +5,7 @@
 #include <variant>
 #include <vector>
 
-#include "table_schema.hpp"
+#include "storage/table/table_schema.hpp"
 
 // One row in schema column order. std::monostate represents SQL NULL.
 using RowValue = std::variant<

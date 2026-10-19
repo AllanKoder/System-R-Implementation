@@ -10,7 +10,7 @@
 #include <string>
 #include <vector>
 
-#include "row_codec.hpp"
+#include "storage/serialization/row_codec.hpp"
 
 namespace {
     // Build a minimal schema for tests that focus on one column type.

@@ -7,9 +7,9 @@
 #include <string>
 #include <utility>
 
-#include "byte_reader.hpp"
-#include "byte_writer.hpp"
-#include "row_codec.hpp"
+#include "storage/serialization/byte_reader.hpp"
+#include "storage/serialization/byte_writer.hpp"
+#include "storage/serialization/row_codec.hpp"
 
 // NOTE: This is a very slow, and unoptimized serilization/encoding format. This is more for learning purposes than anything else!
 namespace {

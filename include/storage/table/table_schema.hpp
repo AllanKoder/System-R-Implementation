@@ -2,7 +2,7 @@
 #include <vector>
 #include <string>
 
-#include "column_types.hpp"
+#include "storage/table/column_types.hpp"
 
 struct ColumnDefinition {
     explicit ColumnDefinition(std::string name, ColumnType type, bool nullable);

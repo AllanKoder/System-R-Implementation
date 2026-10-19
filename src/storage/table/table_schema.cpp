@@ -1,4 +1,4 @@
-#include "table_schema.hpp"
+#include "storage/table/table_schema.hpp"
 #include <assert.h>
 
 ColumnDefinition::ColumnDefinition(std::string name, ColumnType type, bool nullable):

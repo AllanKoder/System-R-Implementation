@@ -37,7 +37,6 @@ add_library(query_engine ${QUERY_ENGINE_SOURCES})
 target_include_directories(query_engine
     PUBLIC
     "${CMAKE_CURRENT_SOURCE_DIR}/include"
-    "${CMAKE_CURRENT_SOURCE_DIR}/include/datatypes"
 )
 target_link_libraries(query_engine
     PUBLIC

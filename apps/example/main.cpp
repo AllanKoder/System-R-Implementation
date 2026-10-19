@@ -2,7 +2,7 @@
 #include <iomanip>
 #include <cstddef>
 
-#include "row_codec.hpp"
+#include "storage/serialization/row_codec.hpp"
 
 int main()
 {
