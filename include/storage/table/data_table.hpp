@@ -12,7 +12,8 @@ class DataTable
 
     // Methods:
     // GetRowCollection -> GetRowCollection (Holds the physical table)
-    // GetIndexCollection -> IndexCollection (Holds the physical index)
+    // GetSargableIndex(string for the index name - is unique) -> Get a collection of indexes that are sargable.
+    // GetIndexCollections -> IndexCollections (Holds the physical index)
     // GetIndexDefinitions -> GetIndexes (Collection)
     // Column and Index are both interfaces of IDataCollection
     // GetSchema
@@ -21,6 +22,7 @@ class DataTable
     // Schema, Indexes, Column
     // Catalog -> Tables,
 
+    // Questions
     // Should we include information about the primary index?
     // - No, that is in the index definitions
     // We can also declare the schema in here?

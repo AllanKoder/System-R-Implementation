@@ -20,6 +20,15 @@ using RowValue = std::variant<
     std::string
 >;
 
+// Only valid key options
+using RowValueKey = std::variant<
+    std::int8_t,
+    std::int16_t,
+    std::int32_t,
+    std::int64_t,
+    std::string
+>;
+
 using RowValues = std::vector<RowValue>;
 
 
