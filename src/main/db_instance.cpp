@@ -1,7 +1,8 @@
 #include "main/db_instance.hpp"
 #include "lmdb/lmdb_utils.h"
 
-DbInstance::DbInstance(std::string path, size_t database_size_bytes)
+DbInstance::DbInstance(std::string path, size_t database_size_bytes):
+row_codec_()
 {
     LMDB_CHECK(mdb_env_create(&env_));
     LMDB_CHECK(mdb_env_set_mapsize(env_, database_size_bytes));

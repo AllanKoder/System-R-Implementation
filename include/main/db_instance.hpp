@@ -13,4 +13,5 @@ public:
     // Get
 private:
     MDB_env *env_;
+    RowCodec row_codec_;
 };
